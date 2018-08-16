@@ -1,11 +1,12 @@
 var friends = require("../data/friends.js");
 
 module.exports = function (app) {
+
 	app.get("/api/friends", function (req, res) {
 		res.json(friends);
 	});
 
-	app.post("/api/friends", function (req, res) {
+	app.post('/api/friends', function (req, res) {
 
 		var bestMatch = {
 			name: "",
@@ -19,6 +20,7 @@ module.exports = function (app) {
 		var userScores = userData.scores;
 
 		console.log(userScores);
+		
 		// This variable will calculate the difference between the users score and the scores of each user in the database 
 		var totalDifference = 0;
 

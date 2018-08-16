@@ -1,23 +1,23 @@
 var friends = [
 	{
-		name: "Person1",
-		photo: "https://cdn-images-1.medium.com/max/1600/0*Ha306Isq8WasgrgW.png",
+		name: "Jim Carrey",
+		photo: "https://menshairstylesfix.com//wp-content/uploads/2017/12/jim-4-400x400.jpg",
 		scores: [
 			"5",
-			"1",
+			"5",
 			"4",
 			"4",
 			"5",
-			"1",
-			"2",
 			"5",
-			"4",
-			"1"
+			"5",
+			"5",
+			"5",
+			"3"
 		]
 	},
 	{
-		name: "Person2",
-		photo: "https://www.hellomagazine.com/imagenes/celebrities/2017080241160/megan-fox-rare-photo-sons/0-214-285/megan-t.jpg",
+		name: "Megan Fox",
+		photo: "http://instagramartis.com/wp-content/uploads/2018/06/mood-tbt...-Megan-Fox-400x400.jpg",
 		scores: [
 			"4",
 			"4",
@@ -28,55 +28,55 @@ var friends = [
 			"4",
 			"5",
 			"4",
-			"2"
-		]
-	},
-	{
-		name: "Person3",
-		photo: "https://www.hellomagazine.com/imagenes/celebrities/2017080241160/megan-fox-rare-photo-sons/0-214-285/megan-t.jpg",
-		scores: [
-			"5",
-			"5",
-			"5",
-			"5",
-			"5",
-			"5",
-			"4",
-			"5",
-			"5",
 			"5"
 		]
 	},
 	{
-		name: "Person4",
-		photo: "https://www.hellomagazine.com/imagenes/celebrities/2017080241160/megan-fox-rare-photo-sons/0-214-285/megan-t.jpg",
+		name: "Will Smith",
+		photo: "https://media.vogue.in/wp-content/uploads/2017/12/Will-Smith-Akshay-Kumar-Bright-India-Tour-400x400.jpg",
 		scores: [
+			"5",
+			"4",
+			"5",
+			"4",
+			"5",
+			"5",
+			"2",
+			"5",
+			"5",
+			"3"
+		]
+	},
+	{
+		name: "Nicki Minaj",
+		photo: "http://starforcenetwork.com/wp-content/uploads/2013/02/nicki-minaj-starforcehiphop1-400x400.jpg",
+		scores: [
+			"5",
+			"2",
+			"4",
+			"4",
+			"4",
 			"1",
-			"1",
-			"1",
-			"1",
-			"1",
-			"1",
-			"1",
-			"1",
-			"1",
+			"4",
+			"5",
+			"5",
 			"1"
 		]
 	},
 	{
-		name: "Person5",
-		photo: "https://www.hellomagazine.com/imagenes/celebrities/2017080241160/megan-fox-rare-photo-sons/0-214-285/megan-t.jpg",
+		name: "Angelina Jolie",
+		photo: "http://tattooviewer.com/Content/Images/celebrity/24688.jpg",
 		scores: [
-			"5",
 			"4",
 			"5",
-			"3",
 			"2",
-			"4",
-			"2",
+			"5",
+			"5",
+			"5",
 			"1",
+			"5",
 			"4",
-			"1"
+			"4"
 		]
 	}
 ];

@@ -8,9 +8,10 @@ var path = require("path");
 var PORT = process.env.PORT || 8080;
 
 // ==================================================================
-
+// parse application/json
+// app.use(bodyParser.json())
 //parse apllication/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }));
 // parse various different custom JSON types as JSON
 app.use(bodyParser.json({ type: 'application/*+json' }))
 // parse some custom types into a BUFFER

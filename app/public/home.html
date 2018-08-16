@@ -4,12 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Home Page</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
 	 crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	 crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
 	 crossorigin="anonymous"></script>
 
 	<!-- CSS -->
@@ -20,8 +19,26 @@
 
 
 	<style>
+		body {
+			background-color:	rgba(163, 157, 157, 0.79);
+			
+		}
+
+		.jumbotron {
+			background-color: rgba(64, 138, 138, 0.822);
+			margin-top: 50px;
+			padding: 50px;
+			/* background-size: cover;
+			/* border: 3px solid rgb(177, 18, 18); */
+
+			/* Removes the rounded edges from the navbar */
+			/* -webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0; */
+		}
+
 		.glyphicon-user {
-			color: red;
+			color: rgba(202, 48, 48, 0.925);
 		}
 	</style>
 
@@ -30,7 +47,7 @@
 <body>
 
 	<div class="container">
-		<div style="background: rgba(100, 174, 204, 0.5)" class="jumbotron">
+		<div class="jumbotron">
 			<h1 class="text-center">
 				<span class="glyphicon glyphicon-user"></span> Friend Finder</h1>
 			<hr>
@@ -54,6 +71,9 @@
 		</footer>
 
 	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+
 </body>
 
 </html>
