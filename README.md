@@ -12,8 +12,8 @@ mySQL
 
 Screenshots
 Home Page 
-![](/images/home.png)
+![](/images/home.jpg)
 
-![](/images/survey.png)
+![](/images/survey.jpg)
 
 ![](/images/result.jpg)
