@@ -13,63 +13,87 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<!-- JS -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
 
 
 	<style>
-		body {
-			background-color:	rgba(163, 157, 157, 0.79);
-			
+		body, html {
+    		height: 100%;
+		}
+
+		#bg { 
+			/* The image used */
+			background-image: url("https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+			/* Full height */
+			height: 100%; 
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 
 		.jumbotron {
-			background-color: rgba(64, 138, 138, 0.822);
+			background-color: rgba(0, 0, 0, 0.507);
+			opacity: .90;
 			margin-top: 50px;
 			padding: 50px;
-			/* background-size: cover;
-			/* border: 3px solid rgb(177, 18, 18); */
-
-			/* Removes the rounded edges from the navbar */
-			/* -webkit-border-radius: 0;
-			-moz-border-radius: 0;
-			border-radius: 0; */
+			border: 2px solid rgb(177, 18, 18);
 		}
 
+		.heading, h1 {
+			font-family: 'Lobster', cursive;
+			color: rgb(201, 0, 0);
+			text-align: center;
+			font-size: 65px;
+			
+		}
+
+		h3, footer {
+			font-family: 'Bad Script', cursive;
+			color: rgb(255, 255, 255);
+
+		}
+
+
+
 		.glyphicon-user {
-			color: rgba(202, 48, 48, 0.925);
+			color: rgba(206, 16, 16, 0.918);
 		}
 	</style>
 
 </head>
 
 <body>
+	<div id="bg">
+		<div class="container">
+			<div class="jumbotron">
+				<div class="heading">
+					<h1>Friend Finder</h1>
+				</div>
+				<!-- <span class="glyphicon glyphicon-user"></span>-->
+				<hr>
+				<h3 class="text-center">Answer a few basic questions...</h3>
+				<h3 class="text-center">To find the friend with the greatest compatibility</h3>
 
-	<div class="container">
-		<div class="jumbotron">
-			<h1 class="text-center">
-				<span class="glyphicon glyphicon-user"></span> Friend Finder</h1>
-			<hr>
-			<h2 class="text-center">Answer a few basic questions...</h2>
-			<h3 class="text-center">To find the friend with the greatest compatibility</h3>
-			<br>
-
-			<div class="text-center">
-				<a href="/survey"><button type="button" class="btn btn-lg btn-primary">
-						<span class="glyphicon glyphicon-list-alt"></span> Go to Survey</button>
-				</a>
+				<div class="text-center">
+					<a href="/survey"><button type="button" class="btn btn-lg btn-danger">
+							<span class="glyphicon glyphicon-list-alt"></span> Go to Survey</button>
+					</a>
+				</div>
 			</div>
+			<footer class="footer">
+				<div class="container">
+					<p>
+						<a style="color: black" href="#">API Friend List</a> |
+						<a style="color: black" href="#">Github Repo</a>
+					</p>
+				</div>
+			</footer>
+
 		</div>
-		<footer class="footer">
-			<div class="container">
-				<p>
-					<a href="#">API Friend List</a> |
-					<a href="#">Github Repo</a>
-				</p>
-			</div>
-		</footer>
-
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>

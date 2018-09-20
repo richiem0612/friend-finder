@@ -13,170 +13,192 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<!-- JS -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
 
 
 
 	<style>
-		.container {
-
-			background-color: rgba(184, 174, 174, 0.79);
-			color: rgb(0, 0, 0);
-			font-family: sans-serif;
+		body, html {
+    		height: 100%;
 		}
 
-		body {
-			background-color: rgba(64, 138, 138, 0.822);
+		#image{
+			background-image: url("https://images.pexels.com/photos/1006321/pexels-photo-1006321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: .9;
+		}
 
+		h2 {
+			font-family: 'Lobster', cursive;
+			color: rgb(255, 238, 0);
+			text-align: center;
+			font-size: 50px;
+			
+		}
+
+		h3, footer {
+			font-family: 'Montserrat', sans-serif;
+			color: rgb(202, 5, 5);
+
+		}
+
+		h4 {
+			font-family: 'Montserrat', sans-serif;
+			color: rgb(0, 0, 0);
 		}
 	</style>
 
 </head>
 
 <body>
+	<div id="image">
+		<div class="container">
 
-	<div class="container">
+			<h2 class="text-center">Survey Questions</h2>
+			<hr>
 
-		<h2 class="text-center">Survey Questions</h2>
-		<hr>
+			<h3><strong>About You</strong></h3>
+			<h4>Name (Required)</h4>
+			<input type="text" name="" id="name" class="form-control" required>
 
-		<h3><strong>About You</strong></h3>
-		<h4>Name (Required)</h4>
-		<input type="text" name="" id="name" class="form-control" required>
+			<h4>Link to Photo Image (Required)</h4>
+			<input type="text" name="" id="photo" class="form-control" required>
 
-		<h4>Link to Photo Image (Required)</h4>
-		<input type="text" name="" id="photo" class="form-control" required>
+			<hr>
 
-		<hr>
+			<h3><strong>Question 1</strong></h3>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+			<select data-placeholder="" class="chosen-select" id="q1">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
-		<h3><strong>Question 1</strong></h3>
-		<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-		<select data-placeholder="" class="chosen-select" id="q1">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+			<h3><strong>Question 2</strong></h3>
+			<h4>You love the outdoors</h4>
+			<select data-placeholder="" class="chosen-select" id="q2">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
-		<h3><strong>Question 2</strong></h3>
-		<h4>You love the outdoors</h4>
-		<select data-placeholder="" class="chosen-select" id="q2">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+			<h3><strong>Question 3</strong></h3>
+			<h4>People say you're outgoing.</h4>
+			<select data-placeholder="" class="chosen-select" id="q3">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
-		<h3><strong>Question 3</strong></h3>
-		<h4>People say you're outgoing.</h4>
-		<select data-placeholder="" class="chosen-select" id="q3">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+			<h3><strong>Question 4</strong></h3>
+			<h4>You love children</h4>
+			<select data-placeholder="" class="chosen-select" id="q4">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
-		<h3><strong>Question 4</strong></h3>
-		<h4>You love children</h4>
-		<select data-placeholder="" class="chosen-select" id="q4">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+			<h3><strong>Question 5</strong></h3>
+			<h4>You are pet-friendly</h4>
+			<select data-placeholder="" class="chosen-select" id="q5">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
-		<h3><strong>Question 5</strong></h3>
-		<h4>You are pet-friendly</h4>
-		<select data-placeholder="" class="chosen-select" id="q5">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+			<h3><strong>Question 6</strong></h3>
+			<h4>You rather read a book than watch tv</h4>
+			<select data-placeholder="" class="chosen-select" id="q6">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
-		<h3><strong>Question 6</strong></h3>
-		<h4>You rather read a book than watch tv</h4>
-		<select data-placeholder="" class="chosen-select" id="q6">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+			<h3><strong>Question 7</strong></h3>
+			<h4>People say you have no patience</h4>
+			<select data-placeholder="" class="chosen-select" id="q7">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
-		<h3><strong>Question 7</strong></h3>
-		<h4>People say you have no patience</h4>
-		<select data-placeholder="" class="chosen-select" id="q7">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+			<h3><strong>Question 8</strong></h3>
+			<h4>You love helping others</h4>
+			<select data-placeholder="" class="chosen-select" id="q8">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
-		<h3><strong>Question 8</strong></h3>
-		<h4>You love helping others</h4>
-		<select data-placeholder="" class="chosen-select" id="q8">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+			<h3><strong>Question 9</strong></h3>
+			<h4>People say you're extremely optimistic</h4>
+			<select data-placeholder="" class="chosen-select" id="q9">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
-		<h3><strong>Question 9</strong></h3>
-		<h4>People say you're extremely optimistic</h4>
-		<select data-placeholder="" class="chosen-select" id="q9">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
-
-		<h3><strong>Question 10</strong></h3>
-		<h4>You worry too much about the past</h4>
-		<select data-placeholder="" class="chosen-select" id="q10">
-			<option value=""></option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+			<h3><strong>Question 10</strong></h3>
+			<h4>You worry too much about the past</h4>
+			<select data-placeholder="" class="chosen-select" id="q10">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 
 
-		<br>
-		<br>
+			<br>
+			<br>
 
-		<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"> Submit</button>
+			<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"> Submit</button>
 
-		<hr>
+			<hr>
 
-		<footer class="footer">
-			<div class="container">
-				<p>
-					<a href="#">API Friend List</a> |
-					<a href="#">Github Repo</a>
-				</p>
-			</div>
-		</footer>
+			<footer class="footer">
+				<div class="container">
+					<p>
+						<a href="#">API Friend List</a> |
+						<a href="#">Github Repo</a>
+					</p>
+				</div>
+			</footer>
+		</div>
 	</div>
 
 	<!-- Modal -->
